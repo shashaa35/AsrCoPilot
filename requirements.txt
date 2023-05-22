@@ -1,0 +1,11 @@
+tiktoken
+chromadb
+openai
+unstructured
+langchain
+azure-mgmt-compute
+azure-identity
+msrestazure
+streamlit
+streamlit-chat
+python-dotenv
