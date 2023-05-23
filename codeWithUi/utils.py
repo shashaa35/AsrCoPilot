@@ -28,7 +28,7 @@ def get_initial_message():
         vm_details = st.session_state['vm_details']
     messages=[
             {"role": "system", "content": system_input},
-            {"role": "user", "content": "I want to know the pricing for the vm with details in triple backticks below : ```" + str(vm_details) + "```. Provide the response in tabular format with one row for each vm with each component as column."},
+            {"role": "user", "content": "I want to know the pricing for the vm with details in triple backticks below : ```" + str(vm_details) + "```. Provide the response in tabular format with one row for each vm with each component as column. State the arithmetic formula and calculation in each cell. At the end, elaborate on the calculations and assumptions. -Read your answer, and try to check if there is any arithmetic calculation issue or not. If there is any error, correct it."},
         ]
     return messages
 
